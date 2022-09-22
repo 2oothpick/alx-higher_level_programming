@@ -1,2 +1,2 @@
 #!/bin/bash
-print('test scores aren\'t that important')
+python $PYFILE
