@@ -1,11 +1,11 @@
 #!/usr/bin/node
-const {argv} = require('process');    //importing the in_built process.argv module
-let x = Number(argv[2]);
-if (isNaN(x)){
-    console.log("Missing number of occurrences");
+const { argv } = require('process');
+
+if (isNaN(argv[2])) {
+  console.log('Missing number of occurrences');
 } else {
-    while( x > 0){
-        console.log("C is fun");
-        x--;
-    }
+  const number = parseInt(argv[2]);
+  for (let i = 0; ((i >= 0) && (i < number)); i++) {
+    console.log('C is fun');
+  }
 }
