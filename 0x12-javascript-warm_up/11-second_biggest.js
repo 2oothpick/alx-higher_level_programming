@@ -1,12 +1,11 @@
 #!/usr/bin/node
-const myArray = [];
-if (process.argv.length <= 3) {
+const { argv } = require('process');
+
+if (argv.length <= 3) {
   console.log(0);
 } else {
-  for (let x = 2; process.argv[x] !== undefined; x++) {// takes arguments from CL and puts them ina useable array
-      myArray.push(Number(process.argv[x]));// converts arguments to numbers and concatenates to myArray                         
-  }
-  const sortedArray = myArray.sort();
-  const secondBiggest = sortedArray.length - 2;// index position of the second biggest value in sortedArray
-  console.log(sortedArray[secondBiggest]);
+  let newArgv = argv.slice(2, argv.length);
+  newArgv = newArgv.map((value) => parseInt(value));
+  newArgv.sort((a, b) => b - a);
+  console.log(newArgv[1]);
 }
