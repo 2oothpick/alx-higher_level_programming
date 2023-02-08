@@ -7,13 +7,13 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """ subclass of Rectangle"""
+    """A representation of a square"""
     def __init__(self, size):
-        """instance of a square"""
-        super().__init__(size, size)
+        """initiation of the square"""
+        self.integer_validator("size", size)
         self.__size = size
-        BaseGeometry.integer_validator(self, "size", self.__size)
+        super().__init__(size, size)
 
     def area(self):
-        """returns the area of the square """
+        """"returns the area of the square"""
         return self.__size ** 2
