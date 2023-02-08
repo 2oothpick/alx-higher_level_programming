@@ -4,7 +4,7 @@ contains the MyList class
 """
 
 
-def MyList(list):
+class MyList(list):
     """a subclass of list"""
     def __init__(self):
         super().__init__()
