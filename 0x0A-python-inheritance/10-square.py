@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Contains the class BaseGeometry and subclass Rectangle
+contains Square, a subclass of Rectangle
 """
 
 Rectangle = __import__('9-rectangle').Rectangle
