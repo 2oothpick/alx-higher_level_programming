@@ -8,7 +8,7 @@ import json
 
 
 def save_to_json_file(my_obj, filename):
-    """ 
+    """
     this function writess an object to a text file
     using a JSON representation
     """
