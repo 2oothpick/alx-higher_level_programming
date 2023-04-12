@@ -1,0 +1,13 @@
+import unittest
+from 0-add_integer import add_integer
+
+class Test_add_integer(unittest.TestCase):
+    """Tests for the add_integer function"""
+    def test_addition(self):
+        """Does regular addition work?"""
+        self.assertEqual(add_integer(2, 2), 4)
+
+    def test_integerCast(self):
+        """Are the values Int casted?"""
+        self.assertTrue((isinstance(add_integer(4.5, 5.5), int)))
+
