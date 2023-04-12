@@ -52,6 +52,11 @@ Adding two large negative numbers
     >>> add_integer(-88898989898, -757575757575) #doctest: +ELLIPSIS
     -...
 
+Checking for passed inf:
+	 >>> add_integer(9, float('inf'))
+	 Traceback (most recent call last):
+	 ...
+	 OverflowError: cannot convert float infinity to integer
 
 Scenario: Empty or Null inputs:
 
