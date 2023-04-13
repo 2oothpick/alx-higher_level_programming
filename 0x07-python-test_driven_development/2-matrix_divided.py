@@ -7,10 +7,10 @@ Module contains a matrix division function
 def matrix_divided(matrix, div):
     """Divides elements in matrix by div """
     outer_list = []
-#    raising TypeError if div is not a number
+#   raising TypeError if div is not a number
     if type(div) not in [int, float]:
         raise TypeError('div must be a number')
-#    raising TypeError if div is zero
+#   raising TypeError if div is zero
     if div == 0:
         raise ZeroDivisionError('division by zero')
 #   raising TypeError if matrix isnt a list
@@ -19,18 +19,24 @@ def matrix_divided(matrix, div):
  of integers/floats')
 
     number_of_rows = len(matrix)
-#    delimiter serves as a bound for row comparison
+#   delimiter serves as a bound for row comparison
+#   this prevents the comparison from going out of range
     delimiter = number_of_rows - 1
     for x in range(delimiter):
+        #   raising TypeError if rows in the matrix aren't
+        #   of the same size
         if len(matrix[x]) != len(matrix[x+1]):
             raise TypeError('Each row of the matrix must\
  have the same size')
     for i in matrix:
+        #   raises TypeError matrix isn't a list of a list
         if type(i) != list:
             raise TypeError('matrix must be a matrix\
 (list of list) of integers/floats')
         inner_list = []
         for j in range(len(i)):
+            #   raising TypeError when elements in the matrix
+            #   aren't integers
             if type(i[j]) not in [int, float]:
                 raise TypeError('matrix must be a matrix \
 (list of list) of integers/floats')
