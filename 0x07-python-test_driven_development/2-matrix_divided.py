@@ -38,8 +38,8 @@ def matrix_divided(matrix, div):
             #   raising TypeError when elements in the matrix
             #   aren't integers
             if type(i[j]) not in [int, float]:
-                raise TypeError('matrix must be a matrix \
-(list of list) of integers/floats')
+                raise TypeError('matrix must be a matrix\
+ (list of lists) of integers/floats')
             quotient = round(i[j]/div, 2)
             inner_list.append(quotient)
         outer_list.append(inner_list)
