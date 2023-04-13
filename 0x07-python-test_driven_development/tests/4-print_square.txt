@@ -1,0 +1,12 @@
+========================================
+Test for the ``print_square`` function
+in the ``4-print_square.py`` module
+========================================
+
+Using ``print_square``
+------------------------
+
+Importing the function ``print_square`` from ``4-print_square.py``
+    >>> print_square = __import__('4-print_square').print_square
+
+Edge Case Scenarios:
