@@ -1,0 +1,10 @@
+========================================
+Test for the ``text_indentation`` function
+in the ``5-text_indentation.py`` module
+========================================
+
+Using ``text_indentation``
+------------------------
+
+Importing the function ``text_indentation`` from ``5-text_indentation.py``
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
