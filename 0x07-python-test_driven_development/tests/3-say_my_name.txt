@@ -1,0 +1,11 @@
+========================================
+Test for the ``say_my_name`` function
+in the ``3-say_my_name.py`` module
+========================================
+
+Using ``say_my_name``
+------------------------
+
+Importing the function ``say_my_name`` from ``3-say_my_name.py``
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
