@@ -24,7 +24,7 @@ def matrix_divided(matrix, div):
     for x in range(delimiter):
         if len(matrix[x]) != len(matrix[x+1]):
             raise TypeError('Each row of the matrix must\
- have the same size')   
+ have the same size')
     for i in matrix:
         ##raising TypeError if matrix is not a list of a list
         if type(i) != list:
