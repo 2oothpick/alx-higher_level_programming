@@ -5,6 +5,7 @@ Module contains the ``print_square`` function
 
 
 def print_square(size):
+    """Prints a square"""
     if type(size) != int:
         raise TypeError('size must be an integer')
     elif size < 0:
