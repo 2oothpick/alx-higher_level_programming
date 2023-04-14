@@ -31,7 +31,11 @@ class TestMaxInteger(unittest.TestCase):
     def test_one_element(self):
         """Tests for list with only one element"""
         max = [1]
-        self.assertEqual(max_integer(max), 1)       
+        self.assertEqual(max_integer(max), 1)
+
+    def test_no_args(self):
+        """Tests for no arguments passed to function"""
+        self.assertIsNone(max_integer())  
     
 
 if __name__ == "__main__":
