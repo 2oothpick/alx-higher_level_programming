@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+Module contains unit tests for ``max_integer``
+"""
+
+
 import unittest 
 max_integer = __import__('6-max_integer_test').max_integer
 
