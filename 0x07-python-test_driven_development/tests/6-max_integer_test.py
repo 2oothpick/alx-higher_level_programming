@@ -22,6 +22,13 @@ class TestMaxInteger(unittest.TestCase):
             """Tests for list with one negative number"""
             max = [200, 10, 8, -36, 14, 50]
             self.assertEqual(max_integer(max), 200)
+
+    def test_all_negative(self):
+        """Tests for list with all negative numbers"""
+        max = [-6, -50, -75, -1, -100]
+        self.assertEqual(max_integer(max), -1)
+
+       
     
 
 if __name__ == "__main__":
