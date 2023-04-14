@@ -17,3 +17,6 @@ class TestMaxInteger(unittest.TestCase):
         """Tests for maximum value at the middle of list"""
         max = [2, 10, 8, 360, 14, 50]
         self.assertEqual(max_integer(max), 360)    
+
+if __name__ == "__main__":
+    unittest.main()
