@@ -19,7 +19,6 @@ def text_indentation(text):
                 print()
             else:
                 if i == ' ' and counter == 1:
-                    i == i.lstrip()
                     counter = 0
                     continue
                 if i:
