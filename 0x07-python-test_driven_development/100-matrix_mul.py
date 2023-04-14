@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Module contains ``matrix_mul``:
 a matrix multiplication function
