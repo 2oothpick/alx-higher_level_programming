@@ -12,3 +12,8 @@ class TestMaxInteger(unittest.TestCase):
         """Tests formaximum value at the end of list"""
         max = [2, 10, 8, 36, 14, 50]
         self.assertEqual(max_integer(max), 50)
+    
+    def test_positive_middle(self):
+        """Tests for maximum value at the middle of list"""
+        max = [2, 10, 8, 360, 14, 50]
+        self.assertEqual(max_integer(max), 360)    
