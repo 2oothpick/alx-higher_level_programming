@@ -19,16 +19,16 @@ Both m_a and m_b being list of list of numbers
     [[13, 16]]
 
 m_a being a string and m_b being a list of list of numbers
-    >>> print(matrix_mul([["hello there"]],[[1, 2]]))
+    >>> print(matrix_mul("hello there",[[1, 2]]))
     Traceback (most recent call last):
     ...
-    TypeError: m_a should contain only integers or floats
+    TypeError: m_a must be a list
 
 m_a being a list of list of integers and m_b being a string
-    >>> print(matrix_mul([[1, 2]], [["hello there"]]))
+    >>> print(matrix_mul([[1, 2]], "hello there"))
     Traceback (most recent call last):
     ...
-    TypeError: m_b should contain only integers or floats
+    TypeError: m_b must be a list
 
 m_a being just a list and m_b being a list of list of integers
     >>> print(matrix_mul([1, 2], [[1, 2], [3, 4]]))
