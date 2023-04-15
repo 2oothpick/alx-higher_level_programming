@@ -64,8 +64,8 @@ m_a being a list of list of integers andd m_b being empty
     >>> print(lazy_matrix_mul([[1, 2], [3, 4]], [[]]))
     Traceback (most recent call last):
     ...
-    ValueError: shapes (1,0) and (2,2) not aligned: 0 (dim 1) != 2 (dim 0)y
-
+    ValueError: shapes (2,2) and (1,0) not aligned: 2 (dim 1) != 1 (dim 0)
+    
 m_a being a list of list of non-numbers and m_b being a list of list of numbers
     >>> print(lazy_matrix_mul([['hello','there']], [[1, 2], [3, 4]]))
     Traceback (most recent call last):
