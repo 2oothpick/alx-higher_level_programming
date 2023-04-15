@@ -8,9 +8,9 @@ a matrix multiplication function
 def matrix_mul(m_a, m_b):
     """multiplies 2 matrices"""
     #   adding exceptions
-    if type(m_a) not in list:
+    if type(m_a) not in [list]:
         raise TypeError('m_a must be a list')
-    if type(m_b) not in list:
+    if type(m_b) not in [list]:
         raise TypeError('m_b must be a list')
     #   exception for m_a not being list of list
     for i in m_a:
