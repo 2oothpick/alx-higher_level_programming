@@ -13,10 +13,17 @@ Edge Case Scenarios:
 
 regular inputs:
 Both m_a and m_b being list of list of numbers
-    >>> print(lazy_matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]))
-    [[7, 10], [15, 22]]
-    >>> print(lazy_matrix_mul([[1, 2]], [[3, 4], [5, 6]]))
-    [[13, 16]]
+    >>> m_a = [[1, 2],[3, 4]]
+    >>> m_b = m_a
+    >>> print(lazy_matrix_mul(m_a, m_b))
+    [[ 7 10]
+     [15 22]]
+
+    >>> m_a = [[1, 2]]
+    >>> m_b = [[3, 4],[5, 6]]
+    >>> print(lazy_matrix_mul(m_a, m_b))
+    [[13 16]]
+
 
 m_a being a string and m_b being a list of list of numbers
     >>> print(lazy_matrix_mul("hello there",[[1, 2]]))
