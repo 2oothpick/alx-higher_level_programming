@@ -1,6 +1,2 @@
-/*
- displays a list of all databases
-of your MySQL server
- */
-
+-- lists all databases in MySQL server
 SHOW databases;
