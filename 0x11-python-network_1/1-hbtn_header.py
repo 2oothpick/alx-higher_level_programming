@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" 
-Script displays the X-Request-Id 
-variable found in argv[1] header 
+"""
+Script displays the X-Request-Id
+variable found in argv[1] header
 """
 
 if __name__ == '__main__':
