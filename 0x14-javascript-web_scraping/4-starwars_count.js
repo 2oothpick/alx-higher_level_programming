@@ -11,10 +11,10 @@ request(url, (error, response, body) => {
     for (let i = 0; i < f.results.length; i++) {
       // console.log(i)
       const characterList = f.results[i].characters;
-      const characterId = 'https://swapi-api.alx-tools.com/api/people/18/';
+      // const characterId = 'https://swapi-api.alx-tools.com/api/people/18/';
       for (const x of characterList) {
         // console.log(x)
-        if (x === characterId) {
+        if (x.includes('18')) {
           count++;
         }
       }
